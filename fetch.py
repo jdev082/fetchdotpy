@@ -24,7 +24,6 @@ class DefaultConfig:
     release = True
     userinf = True
     cpu = True
-    gpu = True
 
 sys.path.insert(0, f'{Path.home()}/fetch/')
 
@@ -42,5 +41,3 @@ if getattr(conf, 'release', 'True') == True:
     print(f'Release: {release}')
 if getattr(conf, 'cpu', 'True') == True:
     print(f'CPU: {cpu}')
-if getattr(conf, 'gpu', 'True') == True:
-    print(f'GPU: Cannot display.')
